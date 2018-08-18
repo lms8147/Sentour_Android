@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/unlike_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.tou4u.sentour.unlikeviewer.main.UnlikeActivity">
+
+    <TextView
+        android:id="@+id/textview_unlike_remain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:text="초 동안"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="2"
+        android:gravity="top|center"
+        android:text="여행지가 별로였던 만큼\n화면을 터치하여\n스트레스를 푸세요"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textview_unlike_touch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="2"
+        android:background="@drawable/border_white_black_sub"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="40sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+def SK_DEV_API_URL = '"' + SkDevelopmentApiUrl + '"' ?: '"Define SkDevelopmentApiUrl in your gradle.properties"'
+def SK_DEV_API_KEY = '"' + SkDevelopmentApiKey + '"' ?: '"Define SkDevelopmentApiKey in your gradle.properties"'
+def VISITKOREA_API_KEY = '"' + VisitkoreaApiKey + '"' ?: '"Define VisitkoreaApiKey in your gradle.properties"'
+def VISITKOREA_API_URL = '"' + VisitkoreaApiUrl + '"' ?: '"Define VisitkoreaApiUrl in your gradle.properties"'
+def BACK_END_SERVER_BASE_URL = '"' + BackEndServerBaseUrl + '"' ?: '"Define BackEndServerBaseUrl in your gradle.properties"'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    defaultConfig {
+        applicationId 'com.tou4u.sentour'
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "0.9"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug{
+            buildConfigField 'String', "SK_DEV_API_URL", SK_DEV_API_URL
+            buildConfigField 'String', "SK_DEV_API_KEY", SK_DEV_API_KEY
+            buildConfigField 'String', "VISITKOREA_API_KEY", VISITKOREA_API_KEY
+            buildConfigField 'String', "VISITKOREA_API_URL", VISITKOREA_API_URL
+            buildConfigField 'String', "BACK_END_SERVER_BASE_URL", BACK_END_SERVER_BASE_URL
+        }
+        release {
+            buildConfigField 'String', "SK_DEV_API_URL", SK_DEV_API_URL
+            buildConfigField 'String', "SK_DEV_API_KEY", SK_DEV_API_KEY
+            buildConfigField 'String', "VISITKOREA_API_KEY", VISITKOREA_API_KEY
+            buildConfigField 'String', "VISITKOREA_API_URL", VISITKOREA_API_URL
+            buildConfigField 'String', "BACK_END_SERVER_BASE_URL", BACK_END_SERVER_BASE_URL
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.google.android.gms:play-services-location:8.1.0'
+    testImplementation 'junit:junit:4.12'
+}

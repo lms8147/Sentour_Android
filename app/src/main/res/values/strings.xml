@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">SenTour</string>
+
+    <string name="CONTENT_TYPE_SPOT">관광지</string>
+    <string name="CONTENT_TYPE_CULTURE">문화</string>
+    <string name="CONTENT_TYPE_FESTIVAL">축제</string>
+    <string name="CONTENT_TYPE_COURSE">여행코스</string>
+    <string name="CONTENT_TYPE_LEPORTS">레포츠</string>
+    <string name="CONTENT_TYPE_SHOPPING">쇼핑</string>
+    <string name="CONTENT_TYPE_RESTAURANT">음식</string>
+
+    <string name="action_info">INFO</string>
+    <string name="action_copyright">COPYRIGHT</string>
+
+    <string name="warning_main">본 어플은 현재 SK 앱 공모전 출품을 위해 홍보용으로 임시 구동중인 Version 0.9 서비스입니다.\n\n
+Version 0.9 에서는\n
+추후 정식 version 1.0 에서 업데이트될\n
+회원가입,\n
+평가 신뢰도 구축,\n
+해시태그 다양화\n
+동기화 최적화\n
+서비스가 제외되어 있습니다.\n\n
+
+따라서 현재 어플에 반영된 비선호도 평가는 의미가 없음을 미리 고지합니다.\n\n
+
+정식 버전 구동 전까진 엔터테인먼트로 즐겨주시면 감사하겠습니다\n\n
+
+이상 tou4u 였습니다</string>
+
+
+    <string name="warning_unlike">본 어플은 현재 SK 앱 공모전 출품을 위해 홍보용으로 임시 구동중인 Version 0.9 서비스입니다.\n\n
+Version 0.9 에서는\n
+추후 정식 version 1.0 에서 업데이트될\n
+회원가입,\n
+평가 신뢰도 구축,\n
+해시태그 다양화\n
+동기화 최적화\n
+서비스가 제외되어 있습니다.\n\n
+
+따라서 현재 사용자의 비선호도 평가는 유의미하게 반영되지 않음을 미리 고지합니다.\n\n
+
+정식 버전 구동 전까진 엔터테인먼트로 즐겨주시면 감사하겠습니다\n\n
+
+또한 화면 터치로 인해 발생할수있는 모든 피해에 대해\n
+본 어플은 법적 책임이 없음을 미리 고지하며\n
+사용자의 주의깊은 사용을 권합니다\n\n
+이상 tou4u 였습니다</string>
+
+</resources>
